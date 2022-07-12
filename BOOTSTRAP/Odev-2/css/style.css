@@ -4,6 +4,9 @@
   color: gray;
   background-position: 40%;
   background-size: 6%;
+  background-image:url(../assest/search-solid.svg);
+  background-repeat: no-repeat;
+  padding-left: 15px;
 }
 
 input.empty {
@@ -43,4 +46,8 @@ input.empty {
 .rightpanellinks:hover {
   text-decoration: none;
   color: lightgrey;
+}
+nav{
+  height: 54px;
+  background-color: white;
 }
