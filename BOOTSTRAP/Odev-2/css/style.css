@@ -54,3 +54,6 @@ nav{
 .middlearea{
   max-height: 200px !important;
 } 
+.card-header,.card-footer{
+background-color: white;
+}
