@@ -20,6 +20,8 @@ Oluşturulma tarihi
 6 Eyl 2021
 Açıklama yok
 Görüntüleyenler indirebilir */
+
+
 .navbarbg {
   height: 55px;
   background-color: white;
@@ -35,10 +37,12 @@ input.searche {
 input.searche::placeholder {
   font-size: 14px;
   color: gray;
-  background-image: url(/bootstraplinkedinclone/assets/search-solid.svg);
+  background-image: url(file:///C:/Users/kemal/Desktop/Kodluyoruz%20Projeler/Kodluyoruz-Projeleri/BOOTSTRAP/Odev-3/assets/search-solid.svg);
   background-repeat: no-repeat;
-  background-size: 7%;
+  background-size: 9%;
+  padding-left: 1.2rem;
 }
+
 
 .body {
   background-color: #f3f2ef;
