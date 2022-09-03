@@ -22,6 +22,7 @@ Açıklama yok
 Görüntüleyenler indirebilir */
 
 
+
 .navbarbg {
   height: 55px;
   background-color: white;
@@ -52,7 +53,7 @@ input.searche::placeholder {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   color: gray;
-  margin-top: 5px;
+  margin-top: 3px;
   font-weight: lighter;
 }
 
@@ -73,6 +74,7 @@ button.mediatext:hover {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   color: #5f5f5f;
+  border: none;
 }
 
 i {
@@ -82,7 +84,9 @@ i {
 i:hover {
   color: black;
 }
-
+.form-control {
+  border: none;  
+}
 input.content {
   border-radius: 40px;
   height: 45px;
@@ -91,13 +95,22 @@ input.content::placeholder {
   font-weight: bolder;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(/bootstraplinkedinclone/assets/edit-regular.svg);
+  background-image: url(file:///C:/Users/kemal/Desktop/Kodluyoruz%20Projeler/Kodluyoruz-Projeleri/BOOTSTRAP/Odev-3/assets/edit-regular.svg);
   background-repeat: no-repeat;
   background-size: auto;
+  padding-left: 1.6rem;
 }
 
 div.card {
   border-radius: 10px;
+}
+.card-header {
+  display: flex;
+}
+
+.card-body {
+  position: static;
+  overflow: hidden ;
 }
 
 .header {
