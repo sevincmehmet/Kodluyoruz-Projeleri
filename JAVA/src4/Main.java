@@ -7,23 +7,24 @@ public class Main {
         
         //GİDİLEN MESAFEYE GÖRE TAKSİMETRE TUTTARI HESAPLAMA
 
-        Scanner klavye = new Scanner(System.in);
-        System.out.print("Lütfen kaç km gidildiğini giriniz\t:");
+        try (Scanner klavye = new Scanner(System.in)) {
+            System.out.print("Lütfen kaç km gidildiğini giriniz\t:");
 
-        double yol = klavye.nextDouble();
+            double yol = klavye.nextDouble();
 
-        while(yol<0){
-            System.err.print("Lütfen geçerli bir yol giriniz\t:");
-            yol = klavye.nextDouble();
+            while(yol<0){
+                System.err.print("Lütfen geçerli bir yol giriniz\t:");
+                yol = klavye.nextDouble();
+            }
+
+            double ücret = (10 +(yol*2.20));
+            
+            if(ücret < 20){
+               ücret = 20;
+            }
+            
+            System.out.println("Ödenecek tutar\t:" + ücret);
         }
-
-        double ücret = (10 +(yol*2.20));
-        
-        if(ücret < 20){
-           ücret = 20;
-        }
-        
-        System.out.println("Ödenecek tutar\t:" + ücret);
     
 
     }
