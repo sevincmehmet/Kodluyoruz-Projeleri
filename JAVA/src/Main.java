@@ -4,6 +4,8 @@ public class Main {
     public static void main(String[] args) {
         double fizik, kimya, mat;
 
+        // NOT ORTALAMASI HESAPLAMA
+        
         try (Scanner klavye = new Scanner(System.in)) {
             System.out.print("Lütfen matematik notunuzu giriniz :\t");
             mat = klavye.nextDouble();

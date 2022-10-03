@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] args) {
        
+        // ÜÇGEN ALANI HESAPLAMA
+        
         int a,b,c;
         Scanner klavye = new Scanner(System.in);
         System.out.println("Lütfen üçkeninizin kenar uzunluklarını giriniz\t:");

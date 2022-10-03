@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         
+        // KDV HESAPLAMA
+        
         try (Scanner klavye = new Scanner(System.in)) {
             System.out.println("Lütfen ürün fiyatını giriniz \t:");
             double fiyat = klavye.nextDouble();
