@@ -38,7 +38,10 @@ public class Main {
                 break;
 
                 case 4:
-                    System.out.println("Sonuç : " + (s1/s2));
+                    if(s2 != 0) 
+                        System.out.println("Sonuç : " + s1/2);
+                    else
+                        System.err.println("Sayı bölü sıfır tanımsızlığı!!");    
                 break;
                 default :
                     System.out.println("Böyle bir işlem yok");
