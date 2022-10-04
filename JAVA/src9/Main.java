@@ -8,29 +8,30 @@ public class Main {
 
         //KULLANNICI GİRİŞİ
 
-        Scanner sc = new Scanner(System.in);
-        String sifre = "Sevinc1967";
-        System.out.println("Şifrenizi giriniz : ");
-        String giris = sc.nextLine();
+        try (Scanner sc = new Scanner(System.in)) {
+            String sifre = "Sevinc1967";
+            System.out.println("Şifrenizi giriniz : ");
+            String giris = sc.nextLine();
 
-        String secim[] = {"evet", "hayır"};
-        if(giris != sifre){
-            System.err.println("Şifreniz yanlış şifreyi sıfırlamak ister misiniz ? (evet veya hayır diye cevap veriniz..)");
-            String sec = sc.nextLine();
-            if(Objects.equals(sec, secim[0])) {
-                
-                System.out.println("yeni şifrenizi giriniz : ");
-                String yeniSifre = sc.nextLine();
-                
-                if(sifre.equals(yeniSifre)){
+            String secim[] = {"evet", "hayır"};
+            if(giris != sifre){
+                System.err.println("Şifreniz yanlış şifreyi sıfırlamak ister misiniz ? (evet veya hayır diye cevap veriniz..)");
+                String sec = sc.nextLine();
+                if(Objects.equals(sec, secim[0])) {
                     
-                    while(sifre.equals(yeniSifre)){
-                        System.out.println("Yeni şifreniz eskisi ile aynı olamaz!!Şifre oluşturulamadı, lütfen başka şifre giriniz : ");
-                        yeniSifre = sc.nextLine();
-                    }System.out.println("Şifre oluşturuldu.");
+                    System.out.println("yeni şifrenizi giriniz : ");
+                    String yeniSifre = sc.nextLine();
+                    
+                    if(sifre.equals(yeniSifre)){
+                        
+                        while(sifre.equals(yeniSifre)){
+                            System.out.println("Yeni şifreniz eskisi ile aynı olamaz!!Şifre oluşturulamadı, lütfen başka şifre giriniz : ");
+                            yeniSifre = sc.nextLine();
+                        }System.out.println("Şifre oluşturuldu.");
 
-                }else System.out.println("Şifre oluşturuldu.");
-            }else System.out.println("peki :)");
-        }else System.out.println("Giriş yapıldı.");
+                    }else System.out.println("Şifre oluşturuldu.");
+                }else System.out.println("peki :)");
+            }else System.out.println("Giriş yapıldı.");
+        }
     }
 }
