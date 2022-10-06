@@ -24,7 +24,5 @@ public class Main {
         for (int i = 1; i < sinir; i*=5) {
             System.out.print(i + " ");
         }
-
-
     }
 }
