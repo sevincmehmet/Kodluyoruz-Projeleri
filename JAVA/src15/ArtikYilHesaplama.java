@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class ArtikYilHesaplama {
     public static void main(String[] args) {
 
+        //ARTIK YIL HESAPLAMA
         try (Scanner scan = new Scanner(System.in)) {
             int yil;
             String stringYil;
