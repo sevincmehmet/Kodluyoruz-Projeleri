@@ -1,4 +1,4 @@
-package JAVA.zsc24;
+package JAVA.src24;
 import java.util.Scanner;
 
 public class Atm {
