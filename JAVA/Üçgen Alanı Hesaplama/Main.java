@@ -6,6 +6,8 @@ public class Main{
         // ÜÇGEN ALANI HESAPLAMA
         
         int a,b,c;
+        double u,A;
+        
         try (Scanner klavye = new Scanner(System.in)) {
             System.out.println("Lütfen üçkeninizin kenar uzunluklarını giriniz\t:");
             
@@ -13,8 +15,8 @@ public class Main{
             b = klavye.nextInt();
             c = klavye.nextInt();
         }
-        double u = ((a+b+c)/2);
-        double A = Math.sqrt(u*(u-a)*(u-b)*(u-c));
+        u = ((a+b+c)/2);
+        A = Math.sqrt(u*(u-a)*(u-b)*(u-c));
 
         System.out.println("Üçgeninizin Alanı\t:" + A);
     }
