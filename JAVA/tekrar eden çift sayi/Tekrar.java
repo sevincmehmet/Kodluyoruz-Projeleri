@@ -1,7 +1,5 @@
 import java.util.Arrays;
 
-import javax.swing.text.html.FormView;
-
 public class Tekrar {
     public static void main (String[] args){
 
